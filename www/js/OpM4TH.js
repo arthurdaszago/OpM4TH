@@ -7,7 +7,14 @@
                     []];
   var respostas = [["08","16","12","15"],
                     []];
-
+repeticao = setInterval(function(){
+          var tempo = $(".facil1 span.seg").text();
+          var tempoAtual = parseInt(tempo-1);
+          $(".facil1 span.seg").text(tempoAtual);
+            if(tempoAtual==0){
+              clearInterval(repeticao);
+            };
+        },1000);
 
  $(".inicio div").on("click", function(){
       $("section.dificuldade").show();
@@ -24,6 +31,7 @@
       	$(".progresso").animate({
           width:0
         },30000);
+        $(".facil1 span.seg").text(30);
 
         var numimg = Math.floor(Math.random() * 2);
         var numimg2 = Math.floor(Math.random() * 2);
@@ -50,15 +58,11 @@
           $(".facil1 .ops .op13 .number").text(perguntas[0][7]);
           $(".facil1 .ops .op13 .equal").text(perguntas[0][8]);
           $(".facil1 .ops .op13 .result").text(perguntas[0][9]);
-
-        repeticao = setInterval(function(){
-          var tempo = $(".facil1 span.seg").text();
-          var tempoAtual = parseInt(tempo-1);
-          $(".facil1 span.seg").text(tempoAtual);
-            if(tempoAtual==30){
-              clearInterval(repeticao);
-            };
-        },1000);
+          //RESPOSTAS
+          $(".facil1 .res .1").text(respostas[0][0]);
+          $(".facil1 .res .2").text(respostas[0][1]);
+          $(".facil1 .res .3").text(respostas[0][2]);
+          $(".facil1 .res .4").text(respostas[0][3]);
 
       });
 
