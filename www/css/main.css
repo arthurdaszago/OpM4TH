@@ -1,0 +1,187 @@
+body, html{
+    width: 100%;
+    height: 100%;
+
+}
+/*------------------FUNDO----------------------------*/
+div.fundo{
+    background:linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('../img/background.jpg') center top;
+    background-size: 700px 700px;
+    background-position: top;
+    width: 100%;
+    height: 100%;
+    filter: blur(2.5px);
+    position: absolute;
+    z-index: -10;
+
+}
+/*------------FORMATACAO TELA INICIAL*/
+.inicio{
+    display: ;
+}
+.inicio h1{
+	text-align: center;
+	padding-top: 10vw;
+	line-height: 15vw;
+}
+.inicio h1 .one{
+	color: white;
+	font-size: 3em;
+	font-weight: bold;
+}
+.inicio h1 .two{
+	color: white;
+	font-size: 3.5em;
+	font-family: 'Alfa Slab One';
+	border-bottom: 0.2vw solid #D52F15;
+}
+.inicio h2{
+    padding-top: 2vw;
+    font-size: 2em;
+    color: lightgray;
+    text-align: center;
+    font-weight: bold;
+}
+#main{
+    width: 60vw;
+    height: 11vh;
+    position: absolute;
+    top:80%;
+    left: 50%;
+    perspective: 70vw;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+#box{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #108E91;
+    font-family: fantasy;
+    font-size: 2.5em;
+    color:#A2E6EF;
+    text-align: center;
+    line-height: 20vw;
+    text-shadow: 0 0.05vw 0.1vw rgba(0,0,0,.2);
+    box-shadow: 0 0.15vw 0.3vw rgba(59,2,97,.4);
+    transition: all .5s;
+}
+#boxBottom{
+    width: 100%;
+    height: 5.8vh;
+    background-color:#108E91;
+    position: absolute;
+    top:79%;
+    left: 0;
+    transform: rotateX(-87deg);
+    transition: all .5s;
+}
+#main:hover #box{
+    color: #52Dee7;
+    background-color: #108E91;
+    transform: rotateX(25deg);
+    text-shadow: 0 0.1vw 0.1vw rgba(0,0,0,.2);
+    box-shadow: 0 0.25vw 0.3vw rgba(59,2,97,.4);
+}
+#main:hover #boxBottom{
+    transform: rotateX(-70deg);
+}
+
+/*--------------------ESCOLHER DIFICULDADE-----------------------------*/
+.dificuldade{
+    background-color: #F0A933;
+    font-family: Alfa Slab One;
+    color: white;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    font-size: 2.5em;
+    text-align: center;
+}
+.dificuldade h1{
+    padding: 7vh 0vw 0vh 0vw;
+    color: black;
+}
+.dificuldade ul{
+    padding: 5vh 5vw 5vh 5vw;
+}
+.dificuldade ul li{
+    margin: 5vh 5vw 5vh 5vw;
+    border: 0.5vw solid black;
+}
+#facil, #medio, #dificil{
+    height: 16vh;
+    line-height: 16vh;
+    width: 80vw;
+    background-color: #108E91;
+    border-radius: 0.5em;     
+}
+
+/*--------------------JOGO-----------------------------*/
+.facil1{
+    text-align: center;
+    background-color: gray;
+    width: 100vw;
+    height: 100%;
+    display: none;
+    padding-top: 5vw;
+    background-color: #F0A933;
+}
+.facil1 div{
+    z-index: 0;
+    position: relative;
+    margin: 0vw 0 0 1.5vw;
+    width: 95vw;
+    height: 8vh;
+    background-color: white;
+    text-align: center;
+    border-radius: 5vw;
+    border: 0.5vw solid black;   
+}
+.facil1 div.progresso{
+    z-index: 1;
+    position: relative;
+    width: 95vw;
+    margin-left: 0vw;
+    height: 8vh;
+    border: none;
+    background-color: #52Dee7;
+}
+.facil1 span.seg{
+    z-index: 2;
+    position: relative;
+    font-size: 2.5em;
+    font-family: sans-serif;
+    font-weight: bold;
+    top: -6.5vh;
+}
+body section.facil1 ul.res{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5vh 5vw 1vh 5vw;
+}
+.facil1 ul.res li{
+    background-color: white;
+    font-size: 4em;
+    height: 15vh;
+    line-height: 15vh;
+    width: 35vw;
+    border-radius: 0.2em;
+    margin: 1vh 1vw 1vh 1vw;
+}
+.facil1 ul ul{
+
+    width: 70vw;
+    height: 12vh;
+    background-color: white;
+    margin: 0 0 4vw 15vw;
+    display: flex;
+    justify-content: space-around;
+}
+.facil1 ul ul.op11 li, ul ul.op12 li, ul ul.op13 li{
+    width: 10vw;
+    height: 12vh;
+    line-height: 12vh;
+    font-size: 2em;
+}
