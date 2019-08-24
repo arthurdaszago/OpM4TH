@@ -118,6 +118,11 @@ div.fundo{
 }
 
 /*--------------------JOGO-----------------------------*/
+img{
+    height: 10vh;
+    line-height: ;
+    width: 15vw;
+}
 .facil1{
     text-align: center;
     background-color: gray;
@@ -184,4 +189,7 @@ body section.facil1 ul.res{
     height: 12vh;
     line-height: 12vh;
     font-size: 2em;
+}
+.medio1{
+    display: none;
 }
