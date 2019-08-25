@@ -20,20 +20,20 @@ div.fundo{
     display: ;
 }
 .inicio h1{
-	text-align: center;
-	padding-top: 10vw;
-	line-height: 15vw;
+    text-align: center;
+    padding-top: 10vw;
+    line-height: 15vw;
 }
 .inicio h1 .one{
-	color: white;
-	font-size: 3em;
-	font-weight: bold;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
 }
 .inicio h1 .two{
-	color: white;
-	font-size: 3.5em;
-	font-family: 'Alfa Slab One';
-	border-bottom: 0.2vw solid #D52F15;
+    color: white;
+    font-size: 3.5em;
+    font-family: 'Alfa Slab One';
+    border-bottom: 0.2vw solid #D52F15;
 }
 .inicio h2{
     padding-top: 2vw;
@@ -123,16 +123,16 @@ img{
     line-height: ;
     width: 15vw;
 }
-.facil1{
+.jogofacil{
     text-align: center;
     background-color: gray;
     width: 100vw;
-    height: 100%;
+    height: 95%;
     display: none;
-    padding-top: 5vw;
+    padding-top: 5vh;
     background-color: #F0A933;
 }
-.facil1 div{
+.jogofacil div.tempo{
     z-index: 0;
     position: relative;
     margin: 0vw 0 0 1.5vw;
@@ -143,7 +143,8 @@ img{
     border-radius: 5vw;
     border: 0.5vw solid black;   
 }
-.facil1 div.progresso{
+.jogofacil div.progresso{
+    text-align: center;
     z-index: 1;
     position: relative;
     width: 95vw;
@@ -151,8 +152,9 @@ img{
     height: 8vh;
     border: none;
     background-color: #52Dee7;
+    border-radius: 5vw;
 }
-.facil1 span.seg{
+.jogofacil span.seg{
     z-index: 2;
     position: relative;
     font-size: 2.5em;
@@ -160,13 +162,13 @@ img{
     font-weight: bold;
     top: -6.5vh;
 }
-body section.facil1 ul.res{
+body div.facil ul.res{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 5vh 5vw 1vh 5vw;
+    padding: 0vh 5vw 1vh 5vw;
 }
-.facil1 ul.res li{
+.facil ul.res li{
     background-color: white;
     font-size: 4em;
     height: 15vh;
@@ -175,21 +177,25 @@ body section.facil1 ul.res{
     border-radius: 0.2em;
     margin: 1vh 1vw 1vh 1vw;
 }
-.facil1 ul ul{
+.facil ul ul{
 
     width: 70vw;
     height: 12vh;
     background-color: white;
-    margin: 0 0 4vw 15vw;
+    margin: 0 0 3vw 15vw;
     display: flex;
     justify-content: space-around;
 }
-.facil1 ul ul.op11 li, ul ul.op12 li, ul ul.op13 li{
+.facil ul ul.op11 li, ul ul.op12 li, ul ul.op13 li{
     width: 10vw;
     height: 12vh;
     line-height: 12vh;
     font-size: 2em;
 }
+#facil1,#facil2,#facil3,#facil4,#facil5,.perdeu,.ganhou{
+    display: none;
+}
+
 .medio1{
     display: none;
 }
