@@ -96,7 +96,7 @@ var fundo = new Audio("aud/fundo.mp3")
      // $("body div.fundo").fadeOut();
        });
     
-      //FACIL
+      //FASES
       $(".dificuldade ul li").on('click',function(){
         fundo.play();
         if (this.id == 1) {
@@ -155,7 +155,7 @@ var fundo = new Audio("aud/fundo.mp3")
                tempo = $(".jogo span.seg").text();
                tempoAtual = parseInt(tempo)+10;
                $(".jogo span.seg").text(tempoAtual);
-               $( "#progresso" ).animate({width: "+=10vw"}, 100);
+               $( "#progresso" ).animate({width: "+=15vw"}, 100);
                 fase += 1;
                  $("#fase1").fadeOut();
                  $("#fase2 ul.res li").shuffleli();
@@ -201,7 +201,7 @@ var fundo = new Audio("aud/fundo.mp3")
                           tempo = $(".jogo span.seg").text();
                           tempoAtual = parseInt(tempo)+10;
                           $(".jogo span.seg").text(tempoAtual);
-                          $( "#progresso" ).animate({width: "+=10vw"}, 100);
+                          $( "#progresso" ).animate({width: "+=15vw"}, 100);
                           fase += 1;
                            $("#fase2").fadeOut();
                            $("#fase3 ul.res li").shuffleli();
@@ -247,7 +247,7 @@ var fundo = new Audio("aud/fundo.mp3")
                                       tempo = $(".jogo span.seg").text();
                                       tempoAtual = parseInt(tempo)+10;
                                       $(".jogo span.seg").text(tempoAtual);
-                                      $( "#progresso" ).animate({width: "+=10vw"}, 100);
+                                      $( "#progresso" ).animate({width: "+=15vw"}, 100);
                                       fase += 1;
                                        $("#fase3").fadeOut();
                                        $("#fase4 ul.res li").shuffleli();
@@ -292,7 +292,7 @@ var fundo = new Audio("aud/fundo.mp3")
                                                 tempo = $(".jogo span.seg").text();
                                                 tempoAtual = parseInt(tempo)+10;
                                                 $(".jogo span.seg").text(tempoAtual);
-                                                $( "#progresso" ).animate({width: "+=10vw"}, 100);
+                                                $( "#progresso" ).animate({width: "+=15vw"}, 100);
                                                 acerto.play();
                                                 fase += 1;
                                                  $("#fase4").fadeOut();
