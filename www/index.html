@@ -24,9 +24,11 @@
     <span class="two">OpM4TH</span></h1> 
 
     <h2>INSTRUÇÕES</h2>
-
-    <p></p>
-    <p></p>
+    <div class="instrucoes">
+      <p>Use o raciocínio lógico para encontrar o resultado</p>
+      <p>Selecione a dificuldade para começar a jogar</p>
+      <p>Descubra o resultado da última conta</p>
+    </div>
 
     <div id="main">
       <div id="box">
@@ -42,23 +44,23 @@
     <section class="dificuldade">
       <h1>SELECIONE A DIFICULDADE:</h1>
       <ul>
-        <li id="facil">Fácil</li>
-        <li id="medio">Médio</li>
-        <li id="dificil">Díficil</li>
+        <li id="1" class="dfacil">Fácil</li>
+        <li id="2" class="dmedio">Médio</li>
+        <li id="3" class="ddificil">Díficil</li>
       </ul>
     </section>
 
 
   <!---JOGO-->
-  <section class="jogofacil">
+  <section class="jogo">
 
     <div class="tempo">
-      <div class="progresso">
+      <div id="progresso">
         
       </div>
     </div>
     <span class="seg">0</span>
-    <div class="facil" id="facil1">
+    <div class="fase" id="fase1">
       <ul class="ops">
         <ul class="op11">
           <li class="x"><img src=""></li>
@@ -86,13 +88,13 @@
 
       </ul> 
       <ul class="res">
-        <li class="1"></li>
-        <li class="2"></li>
-        <li class="3"></li>
-        <li class="4"></li>
+        <li class="r1"></li>
+        <li class="r2"></li>
+        <li class="r3"></li>
+        <li class="r4"></li>
       </ul>
     </div>
-    <div class="facil" id="facil2">
+    <div class="fase" id="fase2">
       <ul class="ops">
         <ul class="op11">
           <li class="x"><img src=""></li>
@@ -120,13 +122,13 @@
 
       </ul> 
       <ul class="res">
-        <li class="1"></li>
-        <li class="2"></li>
-        <li class="3"></li>
-        <li class="4"></li>
+        <li class="r1"></li>
+        <li class="r2"></li>
+        <li class="r3"></li>
+        <li class="r4"></li>
       </ul>
     </div>
-    <div class="facil" id="facil3">
+    <div class="fase" id="fase3">
       <ul class="ops">
         <ul class="op11">
           <li class="x"><img src=""></li>
@@ -154,13 +156,13 @@
 
       </ul> 
       <ul class="res">
-        <li class="1"></li>
-        <li class="2"></li>
-        <li class="3"></li>
-        <li class="4"></li>
+        <li class="r1"></li>
+        <li class="r2"></li>
+        <li class="r3"></li>
+        <li class="r4"></li>
       </ul>
     </div>
-    <div class="facil" id="facil4">
+    <div class="fase" id="fase4">
       <ul class="ops">
         <ul class="op11">
           <li class="x"><img src=""></li>
@@ -188,13 +190,13 @@
 
       </ul> 
       <ul class="res">
-        <li class="1"></li>
-        <li class="2"></li>
-        <li class="3"></li>
-        <li class="4"></li>
+        <li class="r1"></li>
+        <li class="r2"></li>
+        <li class="r3"></li>
+        <li class="r4"></li>
       </ul>
     </div>
-    <div class="facil" id="facil5">
+    <div class="fase" id="fase5">
       <ul class="ops">
         <ul class="op11">
           <li class="x"><img src=""></li>
@@ -222,58 +224,30 @@
 
       </ul> 
       <ul class="res">
-        <li class="1"></li>
-        <li class="2"></li>
-        <li class="3"></li>
-        <li class="4"></li>
+        <li class="r1"></li>
+        <li class="r2"></li>
+        <li class="r3"></li>
+        <li class="r4"></li>
       </ul>
     </div>
     </section>
 
-    <section class="medio1">
-      <ul class="ops">
-        <ul class="op11">
-          <li class="x">x</li>
-          <li class="opr">+</li>
-          <li class="y">y</li>
-          <li class="equal">=</li>
-          <li class="resul">10</li>
-        </ul>
-
-        <ul class="op12">
-          <li class="x"></li>
-          <li class="opr"></li>
-          <li class="number"></li>
-          <li class="equal"></li>
-          <li class="result"></li>
-        </ul>
-
-        <ul class="op13">
-          <li class="y"></li>
-          <li class="opr"></li>
-          <li class="number"></li>
-          <li class="equal"></li>
-          <li class="result"></li>
-        </ul>
-
-      </ul> 
-      <ul class="res">
-        <li class="1">13</li>
-        <li class="2">16</li>
-        <li class="3">18</li>
-        <li class="4">12</li>
-      </ul>
-    </section>
 
                                <!--VENCEU-->
-    <section class="ganhou">
-      PARABÉNS
-                                 <!--GANHOU-->
+    <section class="ganhou" id="ganhar">
+      <h1>OpM4TH</h1>
+      <h2>Parabéns, você ganhou!!</h2>
+      <p>JOGAR NOVAMENTE</p>
     </section>
 
-    <!-- PERDEU -->
-    <section class="perdeu">
-      PERDEU
+    <!----------------------------- PERDEU -->
+    <section class="ganhou" id="perdeu">
+      <h1>OpM4TH</h1>
+      <h2>
+        <span class="msg1">Você perdeu, não foi dessa vez!!</span>
+        <span class="msg2">Na próxima você consegue!!</span>
+      </h2>
+      <p>JOGAR NOVAMENTE</p>
     </section>
 
     <script src="js/jquery-3.4.1.min.js"></script>
